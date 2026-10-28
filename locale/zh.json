@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "本地代理管理",
+    "description": "配置本地网络代理，让 DSH 所有网络请求统一通过代理进行访问。"
+  },
+  "action": {
+    "title": "本地代理",
+    "open": "打开本地代理管理"
+  },
+  "dialog": {
+    "title": "本地网络代理管理",
+    "subtitle": "统一接管 DSH 的全站网络出站请求（模型 API、网络搜索、外网访问与工具请求）"
+  },
+  "status": {
+    "title": "运行状态",
+    "active": "代理已生效",
+    "disabled": "代理已停用（直连模式）",
+    "error": "代理异常",
+    "exitIp": "当前出口 IP",
+    "proxyTarget": "代理目标",
+    "proxiedRequests": "已代理请求",
+    "directRequests": "直连请求"
+  },
+  "config": {
+    "title": "代理服务器配置",
+    "enableProxy": "启用全局代理",
+    "proxyUrl": "代理服务器地址",
+    "proxyUrlPlaceholder": "例如 http://127.0.0.1:7890 或 http://127.0.0.1:10809",
+    "bypass": "绕过名单 (No Proxy)",
+    "bypassPlaceholder": "localhost, 127.0.0.1, ::1, 192.168.*, 10.*",
+    "bypassHint": "默认始终绕过本机环回地址（localhost, 127.0.0.1），保证 Web GUI 与本地服务正常通信",
+    "interceptHttp": "拦截 Node 原生 HTTP/HTTPS 请求",
+    "interceptHttpHint": "通过拦截 Node 内置 http/https.request 隧道转发，确保兼容非 fetch 库",
+    "injectEnv": "同步更新进程环境变量",
+    "injectEnvHint": "同步设置 HTTP_PROXY / HTTPS_PROXY / ALL_PROXY，让子进程命令（curl / git 等）同样走代理",
+    "save": "保存并立即生效",
+    "saving": "正在保存...",
+    "saveSuccess": "配置已保存并立即生效！"
+  },
+  "test": {
+    "title": "连通性测试",
+    "target": "测试目标",
+    "runTest": "立即测试连通性",
+    "testing": "正在测试...",
+    "success": "连接成功！",
+    "failed": "连接失败",
+    "latency": "往返延迟",
+    "status": "HTTP 状态码",
+    "ip": "检测到的出口 IP"
+  },
+  "logs": {
+    "title": "近期访问审计日志",
+    "empty": "暂无请求记录",
+    "time": "时间",
+    "target": "目标地址",
+    "route": "路由方式",
+    "status": "状态"
+  }
+}

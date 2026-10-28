@@ -1,0 +1,37 @@
+{
+  "name": "dsh-local-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "本地网络代理管理插件：让 DSH 的所有网络请求（大模型推理、外部搜索与抓取等）通过配置的代理进行访问，支持 HTTP/HTTPS 代理配置、一键连通性测试与白名单规则。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "本地代理管理 (Local Proxy)",
+    "description": "统一接管 DSH 的全站网络出站请求，支持 HTTP/HTTPS 代理配置、连通性测试与白名单旁路规则。"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  }
+}

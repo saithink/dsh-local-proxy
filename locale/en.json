@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Local Proxy Manager",
+    "description": "Configure outbound HTTP/HTTPS proxy to route all DSH requests through your proxy."
+  },
+  "action": {
+    "title": "Local Proxy",
+    "open": "Open Local Proxy Manager"
+  },
+  "dialog": {
+    "title": "Local Proxy Manager",
+    "subtitle": "Route all DSH outbound network requests (LLM APIs, web search, web fetch, tool calls) through a configured proxy"
+  },
+  "status": {
+    "title": "Status",
+    "active": "Proxy Active",
+    "disabled": "Proxy Disabled (Direct)",
+    "error": "Proxy Error",
+    "exitIp": "Current Exit IP",
+    "proxyTarget": "Proxy Server",
+    "proxiedRequests": "Proxied Requests",
+    "directRequests": "Direct Requests"
+  },
+  "config": {
+    "title": "Proxy Server Settings",
+    "enableProxy": "Enable Proxy",
+    "proxyUrl": "Proxy URL",
+    "proxyUrlPlaceholder": "e.g. http://127.0.0.1:7890 or http://127.0.0.1:10809",
+    "bypass": "Bypass List (No Proxy)",
+    "bypassPlaceholder": "localhost, 127.0.0.1, ::1, 192.168.*, 10.*",
+    "bypassHint": "Loopback destinations (localhost, 127.0.0.1) are always bypassed to keep Web UI functional",
+    "interceptHttp": "Intercept Node.js native HTTP/HTTPS",
+    "interceptHttpHint": "Tunnel legacy http/https.request calls through CONNECT proxy",
+    "injectEnv": "Update Process Environment Variables",
+    "injectEnvHint": "Sync HTTP_PROXY / HTTPS_PROXY / ALL_PROXY so child processes (curl, git) also route through proxy",
+    "save": "Save & Apply Immediately",
+    "saving": "Saving...",
+    "saveSuccess": "Settings saved and applied immediately!"
+  },
+  "test": {
+    "title": "Connectivity Test",
+    "target": "Test Target",
+    "runTest": "Test Connection",
+    "testing": "Testing...",
+    "success": "Connection Successful!",
+    "failed": "Connection Failed",
+    "latency": "Latency",
+    "status": "HTTP Status",
+    "ip": "Detected Exit IP"
+  },
+  "logs": {
+    "title": "Recent Access Audit Log",
+    "empty": "No recent requests logged",
+    "time": "Time",
+    "target": "Destination",
+    "route": "Route",
+    "status": "Status"
+  }
+}
