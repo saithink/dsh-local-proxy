@@ -16,6 +16,12 @@
 
 ---
 
+## 配置截图
+
+<img src="screen-shot.png" style="width:60%">
+
+---
+
 ## 📦 安装方式
 
 ### 方式 1：通过 DSH 客户端界面安装（推荐）
@@ -23,15 +29,15 @@
 2. 点击右上角 **「添加插件」**；
 3. 在地址栏中直接填入本仓库的 GitHub 标识：
    ```text
-   github:你的GitHub用户名/dsh-local-proxy
+   github:saithink/dsh-local-proxy
    ```
-   *（或者填写完整 Git 地址：`https://github.com/你的GitHub用户名/dsh-local-proxy.git`）*
+   *（或者填写完整 Git 地址：`https://github.com/saithink/dsh-local-proxy.git`）*
 4. 点击 **安装** 即可。
 
 ### 方式 2：通过 DSH 命令行安装
 在终端中执行：
 ```bash
-dsh plugin install github:你的GitHub用户名/dsh-local-proxy
+dsh plugin install github:saithink/dsh-local-proxy
 ```
 
 ---
