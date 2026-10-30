@@ -1,5 +1,7 @@
 # dsh-local-proxy
 
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/saithink/dsh-local-proxy)
+
 > **本地网络代理管理插件 (Local Proxy Plugin for DeepSeek Harness)**  
 > 统一接管 DSH 的全站网络出站请求，让大模型 API 推理、网页检索抓取与第三方工具调用等所有外部请求统一通过配置的本地代理访问。
 
